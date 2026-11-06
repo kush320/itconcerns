@@ -24,15 +24,15 @@
       <div class="col-sm-12 col-md-4 col-lg-4">
         <div class="resource shadow h-100" style="margin-bottom:0px;">
           <div class="post__img">
-            <a href="{{ $product->btn_link }}">
+            <a href="{{$product->btn_link}}" target="_blank">
               <img src="{{ asset('images/main/' . $product->image) }}" class="img-fluid" alt="{{$product->title}}">
             </a>
           </div>
           <div class="post__content p-3 justify-content-between" style="margin:0px;">
-              <h4 class="post__title" style="font-size: 25px;"><a href="{{ $product->btn_link }}">{{ $product->title }}</a></h4>
+              <h4 class="post__title" style="font-size: 25px;"><a href="{{$product->btn_link}}"target="_blank">{{ $product->title }}</a></h4>
               <p class="post__desc" style="margin-bottom:0px;font-size:15px;text-align:justify;">{{ Str::limit($product->short_description, 150) }}</p>
             </div>
-            <a href="{{ $product->btn_link }}" class="btn btn-link">
+            <a href="{{$product->btn_link}}" class="btn btn-link"target="_blank">
                   <span>{{$product->btn_title}}</span>
                   <i class="fas fa-arrow-right"></i>
                 </a>
